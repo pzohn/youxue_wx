@@ -1,0 +1,41 @@
+/* pages/index/release/release.wxss */
+.ccc
+{
+  background:no-repeat center center;
+  height: 100%;
+  padding-top: 160%;
+  background-size: cover;
+}
+.microphone{  
+    position:fixed;
+    left: 250rpx;
+    bottom: 0;
+    height: 240rpx;  
+    width: 240rpx;  
+    border-radius: 20rpx;  
+    margin: 50% auto;  
+    background: #26A5FF;  
+}  
+ 
+.record-style{  
+    position: fixed;  
+    bottom: 0%;  
+    left: 0;  
+    height: 120rpx;  
+    width: 100%;
+}  
+.btn-style{ 
+  width: 40%;
+  border-radius: 6px;
+  background-color:#006b57;
+  color: white;
+}  
+  
+.sound-style{  
+  position: absolute;  
+  width: 74rpx;  
+  height:150rpx;  
+  margin-top: 45rpx;  
+  margin-left: 83rpx;  
+}  
+  

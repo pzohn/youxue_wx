@@ -1,0 +1,19 @@
+<view class = "content">
+  <view class="login">
+    <view><image src="/images/parterlogin.jpg" style="width:100%;height:180px;"></image></view>
+  </view>
+  <view class="account">
+    <view class= "title">账号</view>
+    <view class="num"><input bindinput="accountInput" placeholder=" 手机号 " placeholder-style="color:#999999;" /></view>
+  </view>
+  <view class="hr"></view>
+    <view class="account">
+      <view class="title">密码</view>
+      <view class="num"><input bindinput="pwdBlur" placeholder=" 请输入密码" password placeholder-style="color:#999999;" /></view>
+
+    </view>
+  <view class="hr"></view>
+  <view class="button">
+      <button class="btn" disabled="{{disabled}}" type="{{btnstate}}" bindtap="login">商户查询</button>
+  </view>
+</view>

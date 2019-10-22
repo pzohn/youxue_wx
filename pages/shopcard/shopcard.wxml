@@ -1,0 +1,15 @@
+<view class="content">
+  <view class="itemImage">
+    <view class="pic">
+       <image src="{{imageName}}" style="width:312px;height:219px;"></image>
+    </view>
+    <view class="hr"></view>
+  </view>
+  <view class="item1">
+     <text>充值金额：</text> 
+     <input type="text" bindinput='bindkeyboard'/>
+  </view>
+</view>
+<view class="button">
+    <button class="btn1" type="primary" bindtap="pay">充值</button>
+</view>

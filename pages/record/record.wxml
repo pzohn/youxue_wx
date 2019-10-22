@@ -1,0 +1,14 @@
+<view class="ccc" style="background-image:url('{{image_url}}')">
+  <view wx:if="{{isSpeaking}}" class="microphone">
+    <image class="sound-style" src="/images/record/sound_1.png"></image>
+    <image wx:if="{{j==2}}" class="sound-style" src="/images/record/sound_2.png"></image>
+    <image wx:if="{{j==3}}" class="sound-style" src="/images/record/sound_3.png"></image>
+    <image wx:if="{{j==4}}" class="sound-style" src="/images/record/sound_4.png"></image>
+    <image wx:if="{{j==5}}" class="sound-style" src="/images/record/sound_5.png"></image>
+  </view>
+  
+  <view class="record-style" hidden="{{playHidden}}">
+    <button class="btn-style" bindtouchstart="touchdown" bindtouchend="touchup">按 下 录 音</button>
+    
+  </view>
+</view>

@@ -1,0 +1,38 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class="content">
+  <view class="hr"></view>
+  <view class="item">
+     <text>电话号码：</text> 
+     <text>{{phone}}</text>
+  </view>
+  <view class="item">
+     <text>孩子姓名：</text> 
+     <input type="text" name="name" value= '{{name}}'/>
+  </view>
+  <view class="item">
+     <text>孩子性别：</text> 
+     <text>{{sex}}</text>
+  </view>
+  <view class="item">
+     <text>孩子年龄：</text> 
+     <input type="number" name="age" value= '{{age}}'/>
+  </view>
+  <view class="item">
+     <text>父亲姓名：</text>
+     <input type="text" name="father" value= '{{father}}'/>
+  </view>
+  <view class="item">
+     <text>母亲姓名：</text>
+     <input type="text" name="mother" value= '{{mother}}'/> 
+  </view>
+  <view class="item">
+     <text>家庭住址：</text>
+     <input type="text" name="address" value= '{{address}}'/>
+  </view>
+
+  <view class="button">
+      <button class="btn" type="primary" form-type="submit">保存</button>
+  </view>
+</view>
+
+</form>

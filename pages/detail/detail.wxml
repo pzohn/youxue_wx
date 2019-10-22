@@ -1,0 +1,70 @@
+<!--顶部轮播图 begin-->
+<swiper class="lunbo" id="lunbo" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image"/>
+      </swiper-item>
+  </block>
+</swiper>
+
+<view class='title'>
+  <text>{{title}}</text>
+</view>
+<!-- 参与购买头像 -->
+<!-- <view class='join'>
+  <view class='join-box'>
+    <view wx:for="{{images}}" wx:key  style='transform:translateX({{-index*30}}rpx)'>
+      <image class='text' src='{{item}}' mode='aspectFill'></image>
+    </view>
+  </view>
+  <view class='join-text'>等{{joinnum}}人参与</view>
+</view> -->
+<!--顶部轮播图 end-->
+<view class="swiper-tab">
+    <view class="swiper-tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="clickTab">课程详情</view>
+    <view class="swiper-tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="clickTab">课程目录</view>
+    <view class="swiper-tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="clickTab">购买须知</view>
+</view>
+
+<view class = "{{currentTab == 0 ? 'show':'hidden'}}" style='margin-bottom:50px;'>
+  <scroll-view>
+    <block wx:for="{{classInfo}}" wx:key="classInfo" >
+      <image class="img" src="{{item}}" mode="widthFix"></image>
+    </block>
+  </scroll-view>
+</view>
+<view class = "{{currentTab == 1 ? 'show':'hidden'}}" style='margin-bottom:50px;'>
+  <scroll-view>
+    <block wx:for="{{listInfo}}" wx:key="listInfo">
+      <image class="img" src="{{item}}" mode="widthFix"></image>
+    </block>
+  </scroll-view>
+</view>
+<view class = "{{currentTab == 2 ? 'show':'hidden'}}" style='margin-bottom:50px;'>
+  <scroll-view>
+    <block wx:for="{{knowInfo}}" wx:key="knowInfo">
+      <image class="img" src="{{item}}" mode="widthFix"></image>
+    </block>
+  </scroll-view>
+</view>
+
+<!-- 底部悬浮栏 -->
+<view class="detail-nav">
+  <view class='detail-nav-view'>
+    <image bindtap="home" src="../../images/home.png"/>
+    <text>首页</text>
+  </view>
+  <view class="line_nav"></view>
+  <view class='detail-nav-view'>
+    <image bindtap="collect" src="{{collect_url}}" />
+    <text>收藏</text>
+  </view>
+  <button  class='button-green' formType="submit">
+    <text>￥{{price}}</text>
+    <!-- <text>单独购</text> -->
+  </button>
+  <button  class='button-red' bindtap="immeBuy" formType="submit">
+    <!-- <text>￥29.9</text> -->
+    <text>购买</text>
+  </button>
+</view>

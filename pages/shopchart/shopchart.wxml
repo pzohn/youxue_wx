@@ -1,0 +1,65 @@
+<view class="content">
+  <view class="info">
+    <view class="line"></view>
+    
+   <view class="section" >
+    <picker bindchange="bindCasPickerChange" value="{{casIndex1}}" range="{{casArray}}">
+      <view class="picker">
+        选择班级代码:{{casArray[casIndex]}}
+      </view>
+    </picker>
+  </view>
+
+<view class="line"></view>
+    <view class="receive">
+      哈顿优选
+    </view>
+    <view class="line"></view>
+    <view class="items">
+      <checkbox-group bindchange="checkboxChange">
+        <block wx:for="{{goods}}">
+          <view class="item">
+            <view class="icon">
+              <checkbox value="{{item.id}}" checked="{{selected}}" />
+            </view>
+            <view class="pic">
+              <image src="{{item.pic}}" style="width:80px;height:80px;"></image>
+            </view>
+            <view class="order">
+              <view class="title">{{}}</view>
+              <view class="desc">
+                <view>名称：{{item.name}}</view>
+                <view>特殊说明：适用于周二至周五</view>
+              </view>
+              <view class="priceInfo" >
+                <view class="price">￥{{item.price}}</view>
+                <view class="minus" wx:if="{{flag != item.id}}" id="{{item.id}}" bindtap="minusGoods">-</view>
+                <view class="count" wx:if="{{flag != item.id}}">{{item.count}}</view>
+                <view class="add" wx:if="{{flag != item.id}}" id="{{item.id}}" bindtap="addGoods">+</view>
+              </view>
+            </view>
+
+          </view>
+          <view class="line"></view>
+        </block>
+      </checkbox-group>
+      <checkbox-group bindchange="checkAll">
+        <view class="totalInof">
+          <view class="all">
+            <view>
+              <checkbox checked="{{selectedAll}}" />
+            </view>
+            <view>全选</view>
+          </view>
+          <view class="amount">
+            <view class="total">
+              总计：￥{{totalPrice}}元
+            </view>
+          </view>
+          <view class="opr" bindtap="account">去结算</view>
+        </view>
+      </checkbox-group>
+    </view>
+
+  </view>
+</view>

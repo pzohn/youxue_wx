@@ -1,0 +1,39 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class="content">
+  <view class="hr"></view>
+  <view class="item">
+     <text>团旅名称：</text> 
+     <text>{{name}}</text>
+  </view>
+  <view class="item">
+     <text>联系人：</text> 
+     <text>{{user}}</text>
+  </view>
+  <view class="item">
+     <text>联系电话：</text> 
+     <text>{{phone}}</text>
+  </view>
+  <view class="item" wx:if="{{false}}">
+     <text>商铺住址：</text> 
+     <text>{{address}}</text>
+  </view>
+  <view class="item">
+     <text>共享基金：</text> 
+     <text>{{balance}}元</text>
+  </view>
+  <view class="item">
+     <text>餐费定价：</text> 
+     <text>{{food}}元</text>
+  </view>
+  <view class="item">
+     <text>车费定价:</text> 
+     <text>{{car}}元</text>
+  </view>
+  <view class="button">
+      <button class="btn3" type="primary" bindtap="update">刷新</button>
+      <button class="btn1" type="primary" bindtap="share">分享到团</button>
+      <button class="btn" type="primary" bindtap="callme">联系我们</button>
+  </view>
+</view>
+
+</form>

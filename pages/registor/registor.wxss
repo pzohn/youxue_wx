@@ -1,0 +1,84 @@
+.content{
+    width: 100%;
+    height: 700px;
+    background-color: #f2f2f2;
+}
+.hr{
+    padding-top:40px;
+}
+.item{
+    margin: 0 auto;
+    border: 1px solid #16c0c0;
+    height: 40px;
+    width: 90%;
+    border-radius: 3px;
+    background-color: #e2a386;
+    margin-bottom:15px;
+}
+.item input{
+    height: 40px;
+    line-height: 40px;
+    margin-left: 10px;
+}
+.holder{
+    font-size: 14px;
+    color: #833b73;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+}
+.zuhe{
+    height: 40px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom:15px;
+}
+
+.age{
+    border: 1px solid #16c0c0;
+    height: 40px;
+    width: 50%;
+    border-radius: 3px;
+    background-color: #e2a386;
+    margin-bottom:15px;
+    display:flex;
+    flex-direction: row;
+    margin-left:5%; 
+}
+
+.age input{
+    height: 40px;
+    line-height: 40px;
+    margin-left: 10px;
+}
+.btn{
+    width: 90%;
+    color: #999999;
+    margin-top:40px; 
+}
+.agree{
+   margin-left: 5px;
+   color: #666666;
+}
+.opinion{
+    color: red;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.sex{
+    margin: 0 auto;
+    height: 40px;
+    width: 60%;
+    border-radius:3px;
+    text-align: center;
+    margin-left:10px;
+    line-height:  40px; 
+    font-size: 15px;
+    margin-bottom: 15px;
+    margin-right:5%; 
+    display:flex;
+    flex-direction: row;
+}

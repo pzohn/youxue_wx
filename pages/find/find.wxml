@@ -1,0 +1,18 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class="content">
+  <view class="hr"></view>
+  <view class="item">
+     <text>电话号码：</text> 
+     <input name="phone" value= '{{phone}}'></input>
+  </view>
+  <view class="item">
+     <text>孩子姓名：</text> 
+     <input type="text" name="name" value= '{{name}}'/>
+  </view>
+
+  <view class="button">
+      <button class="btn" type="primary" form-type="submit">恢复初始密码</button>
+  </view>
+</view>
+
+</form>

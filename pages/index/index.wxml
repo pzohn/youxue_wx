@@ -1,0 +1,73 @@
+<view class="navbar">
+
+ <view class="search">
+    <view class="searchBg">
+      <view>
+        <image src="../../images/sousuo.png" style="width:25px;height:25px;padding-top:2px;padding-right:5px;"></image>
+      </view>
+      <view>
+        <input type="text" placeholder="请输入关键字" placeholder-class="holder" bindinput="accountInput"           />
+      </view>
+    </view>
+    <view class="btn1" bindtap="resetSearch">搜  索</view>
+  </view>
+
+  <view style='display: flex;'>
+    <text  wx:for="{{navbar}}"
+          data-idx="{{index}}"
+          class="item {{currentTab==index ? 'active' : ''}}"
+          wx:key="unique" bindtap="navbarTap">{{item}}</text>
+  </view>
+</view>
+
+<view class='video_swiper' hidden="{{flag_1}}">
+  <swiper class="lunbo" id="lunbo" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}" wx:key="{{imgUrls}}">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image"/>
+        </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<view class='video_container' hidden="{{flag_2}}">
+  <view class='type-item' wx:for="{{activity_1}}" wx:key="{{index}}" data-videoid="{{item.id}}">
+    <image class='type-img' src='{{item.img}}' mode='aspectFill' data-id="{{item.id}}" data-activityid="{{item.activity_id}}" bindtap='typeHandler'></image>
+    <view class='title'>
+        <text>{{item.name}}</text>
+        <button class='btn' data-id="{{item.id}}" data-activityid="{{item.activity_id}}" bindtap='typeHandler'>去体验</button>
+    </view>
+  </view>
+</view>
+
+<view class='video_container' hidden="{{flag_3}}">
+  <view class='type-item' wx:for="{{activity_2}}" wx:key="{{index}}" data-videoid="{{item.id}}">
+    <image class='type-img' src='{{item.img}}' mode='aspectFill' data-id="{{item.id}}" data-activityid="{{item.activity_id}}" bindtap='typeHandler'></image>
+    <view class='title'>
+        <text>{{item.name}}</text>
+        <button class='btn' data-id="{{item.id}}" data-activityid="{{item.activity_id}}" bindtap='typeHandler'>去体验</button>
+    </view>
+  </view>
+</view>
+
+
+<view class='video_container' hidden="{{flag_4}}">
+  <view class='type-item' wx:for="{{activity_3}}" wx:key="{{index}}" data-videoid="{{item.id}}">
+    <image class='type-img' src='{{item.img}}' mode='aspectFill' data-id="{{item.id}}" data-activityid="{{item.activity_id}}" bindtap='typeHandler'></image>
+    <view class='title'>
+        <text>{{item.name}}</text>
+        <button class='btn' data-id="{{item.id}}" data-activityid="{{item.activity_id}}" bindtap='typeHandler'>去体验</button>
+    </view>
+  </view>
+</view>
+
+<view class='video_container' hidden="{{flag_5}}">
+  <view class='type-item' wx:for="{{activity_4}}" wx:key="{{index}}" data-videoid="{{item.id}}">
+    <image class='type-img' src='{{item.img}}' mode='aspectFill' data-id="{{item.id}}" data-activityid="{{item.activity_id}}" bindtap='typeHandler'></image>
+    <view class='title'>
+        <text>{{item.name}}</text>
+        <button class='btn' data-id="{{item.id}}" data-activityid="{{item.activity_id}}" bindtap='typeHandler'>去体验</button>
+    </view>
+  </view>
+</view>
+

@@ -1,0 +1,39 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class="content">
+  <view class="hr"></view>
+  <view class="item">
+     <input type="number" name="phone" placeholder="请输入手机号(必填)" placeholder-class="holder" bindblur="accountblur"/>
+  </view>
+  <view class="item">
+     <input type="text" password name="password" placeholder="请设置6-20位登录密码" placeholder-class="holder" bindblur="accountblur1"/>
+  </view>
+  <view class="item">
+    <input type="text" password name="repeatpwd" placeholder="请再次输入登录密码" placeholder-class="holder" bindblur="accountblur2"/>
+  </view>
+  <view class="item">
+     <input type="text" name="name" placeholder="孩子姓名(必填)" placeholder-class="holder" />
+  </view>
+  <view class="zuhe">
+    <view class="age">
+      <input type="number" name="age" placeholder="年龄(必填)" placeholder-class="holder" />
+    </view>
+    <view class="sex">
+      <radio-group bindchange="radioChange" >
+        <radio id="boy" value="1">Boy</radio>
+        <radio id="girl" value="0" checked>Girl</radio>
+      </radio-group>
+    </view> 
+  </view>
+  <view class="item">
+     <input type="text" name="father" placeholder="父亲姓名" placeholder-class="holder" />
+  </view>
+  <view class="item">
+     <input type="text" name="mother" placeholder="母亲姓名" placeholder-class="holder" />
+  </view>
+  <view class="item">
+     <input type="text" name="address" placeholder="家庭住址" placeholder-class="holder" />
+  </view>
+  <button class="btn" disabled="{{disabled}}" type="{{btnstate}}" form-type="submit">确定报名</button>
+</view>
+
+</form>

@@ -1,0 +1,13 @@
+
+
+.button{
+  display: flex;
+  flex-direction: row;
+}
+
+.btn1{
+  width: 46%;
+  margin-top: 40px;
+  color: #999999;
+}
+

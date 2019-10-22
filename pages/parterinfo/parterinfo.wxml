@@ -1,0 +1,29 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class="content">
+  <view class="hr"></view>
+  <view class="item">
+     <text>商铺名称：</text> 
+     <text>{{parter_name}}</text>
+  </view>
+  <view class="item">
+     <text>联系电话：</text> 
+     <text>{{parter_phone}}</text>
+  </view>
+  <view class="item">
+     <text>当日累计：</text> 
+     <text>{{day_num}}</text>
+  </view>
+  <view class="item">
+     <text>当月累计：</text> 
+     <text>{{month_num}}</text>
+  </view>
+  <view class="item">
+     <text>总累计：</text> 
+     <text>{{total_num}}</text>
+  </view>
+  <view class="button">
+      <button class="btn" type="primary" bindtap="update">刷新</button>
+  </view>
+</view>
+
+</form>

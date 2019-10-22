@@ -1,0 +1,29 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class="content">
+  <view class="hr"></view>
+  <view class="item">
+      <text>餐费定价:</text> 
+      <input type="number" name="food" value = "{{food}}" placeholder-class="holder"/>
+  </view>
+  <view class="item">
+     <text>车费定价:</text>
+     <input type="number" name="car" value = "{{car}}" placeholder-class="holder"/>
+  </view>
+  <view class="section" wx:if="{{date<=sqldate}}" >
+    <picker mode="date" value="{{sqldate}}" bindchange="bindDateChange">
+      <view class="picker">
+        游玩日期: {{sqldate}}
+      </view>
+    </picker>
+  </view>
+  <view class="section" wx:else>
+    <picker mode="date" value="{{date}}" bindchange="bindDateChange">
+      <view class="picker">
+        游玩日期: {{date}}
+      </view>
+    </picker>
+  </view>
+  <button class="btn" type="primary" form-type="submit">下一步</button>
+</view>
+
+</form>

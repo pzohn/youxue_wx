@@ -1,0 +1,42 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class="content">
+  <view class="hr"></view>
+  <view class="item">
+     <text>电话号码：</text> 
+     <text>{{phone}}</text>
+  </view>
+  <view class="item">
+     <text>孩子姓名：</text> 
+     <text>{{name}}</text>
+  </view>
+  <view class="item">
+     <text>家长陪伴人数：</text> 
+     <text>{{parent_num}} 人</text>
+  </view>
+  <view class="item">
+     <text>餐饮人数:</text> 
+     <text>{{food_num}} 人</text>
+  </view>
+  <view class="item">
+     <text>乘车人数:</text> 
+     <text>{{car_num}} 人</text>
+  </view>
+  <view class="item">
+     <text>组团名称：</text> 
+     <text>{{group_name}}</text>
+  </view>
+  <view class="item">
+     <text>游玩日期：</text> 
+     <text>{{date}}</text>
+  </view>
+  <view class="item">
+     <text>班级序号：</text> 
+     <text>{{group_class}}</text>
+  </view>
+
+  <view class="button">
+      <button class="btn" type="primary" bindtap="call">联系团长</button>
+  </view>
+</view>
+
+</form>

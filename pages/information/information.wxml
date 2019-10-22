@@ -1,0 +1,51 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class="content">
+  <view class="hr"></view>
+  <view class="item">
+     <text>电话号码：</text> 
+     <text>{{phone}}</text>
+  </view>
+  <view class="item">
+     <text>孩子姓名：</text> 
+     <text>{{name}}</text>
+  </view>
+  <view class="item">
+     <text>孩子性别：</text> 
+     <text>{{sex}}</text>
+  </view>
+  <view class="item">
+     <text>孩子年龄：</text> 
+     <text>{{age}}</text>
+  </view>
+  <view class="item">
+     <text>购卡类型：</text> 
+     <text>{{carddesc}}</text>
+  </view>
+  <view class="item">
+     <text>剩余次数：</text> 
+     <text>{{cardnum}}</text>
+  </view>
+  <view class="item">
+     <text>父亲姓名：</text> 
+     <text>{{father}}</text>
+  </view>
+  <view class="item">
+     <text>母亲姓名：</text> 
+     <text>{{mother}}</text>
+  </view>
+  <view class="item">
+     <text>家庭住址：</text> 
+     <text>{{address}}</text>
+  </view>
+
+  <view class="button">
+      <button class="btn" type="primary" bindtap="edit">修改信息</button>
+      <button class="btn3" type="primary" bindtap="update">刷新</button>
+  </view>
+    <view class="button">
+      <button class="btn2" disabled="{{disabled}}" type="{{btnstate}}" bindtap="buy">购买卡片</button>
+      <button class="btn1" disabled="{{disabled1}}" type="{{btnstate1}}" bindtap="createcode">生成电子票</button>
+  </view>
+</view>
+
+</form>

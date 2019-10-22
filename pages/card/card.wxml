@@ -1,0 +1,30 @@
+<view class="content">
+  <view class="itemImage">
+    <view class="pic">
+       <image src="{{imageName}}" style="width:312px;height:219px;"></image>
+    </view>
+    <view class="hr"></view>
+  </view>
+    <view class="item">
+     <text>游玩卡价格：</text> 
+     <text>{{cardprice}}元</text>
+  </view>
+  <view class="item">
+     <text>游玩时间：</text> 
+     <text>{{cardtime}}</text>
+  </view>
+  <view class="item">
+     <text>游玩次数：</text> 
+     <text>{{playnum}}次</text>
+  </view>
+  <view class="item">
+     <text>注意事项：</text> 
+     <text>{{notice}}</text>
+  </view>
+</view>
+
+
+<view class="button">
+    <button class="btn" type="primary" bindtap="rechoose">重新选择</button>
+    <button class="btn1" type="primary" bindtap="pay">付款</button>
+</view>

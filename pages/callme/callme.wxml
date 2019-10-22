@@ -1,0 +1,9 @@
+<view class = "content">
+  <view class="login">
+    <view><image src="/images/callback.jpg" style="width:100%;height:560px;"></image></view>
+  </view>
+
+  <view class="button">
+      <button class="btn1" type="primary" bindtap="back">返回</button>
+  </view>
+</view>

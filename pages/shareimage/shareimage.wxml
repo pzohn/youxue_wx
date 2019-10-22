@@ -1,0 +1,3 @@
+<view class="share">
+  <image src='{{image_url}}' data-src="{{image_url}}" mode="widthFix" bindtap="previewImage"></image>
+</view>

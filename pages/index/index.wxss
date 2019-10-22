@@ -1,0 +1,160 @@
+.navbar{
+ position:fixed;
+ flex: none;
+ /* display: flex; */
+ width: 100%;
+ background: #fff;
+ z-index: 999;
+}
+.navbar .item{
+ position: relative;
+ flex: auto;
+ text-align: center;
+ line-height: 70rpx;
+ color: grey;
+ font-size: 15px;
+}
+.navbar .item.active{
+ color: rgb(221, 56, 65);
+ font-size: 17px;
+ font-weight: 700;
+}
+.navbar .item.active:after{
+ content: "";
+ display: block;
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ right: 0;
+ height: 4rpx;
+ background: rgb(221, 56, 65);
+}
+
+.video_container{
+  padding: 180rpx 25rpx;
+}
+
+/*轮播begin*/
+.video_swiper{
+  padding: 180rpx 25rpx;
+}
+swiper,swiper-item
+{
+   margin:0;
+   padding: 0;
+}
+.lunbo,.lunbo image{height: 330rpx;}
+.lunbo .wx-swiper-dots.wx-swiper-dots-horizontal{
+      margin-bottom: 10rpx;
+}
+.lunbo .wx-swiper-dot{
+    width: 14rpx;
+    display: inline-flex;
+    height: 14rpx;
+    vertical-align: sub; 
+    margin-left: 10rpx;
+    margin-right: 10rpx;
+    background:rgba(255,255,255,.5);
+    border-radius: 100%;
+}
+.lunbo .wx-swiper-dot::before{
+     content: '';
+     flex-grow: 1;
+} 
+.lunbo .wx-swiper-dot-active::before{
+     content: '';
+     flex-grow: 1;
+     background:rgba(255,255,255,1);
+     border-radius: 100%;
+}
+
+.slide-image{
+  width: 100%;vertical-align: top;display: block;
+}
+/*轮播end*/
+.type-item{
+  border-radius: 10rpx;
+  position: relative;
+}
+
+.type-item + .type-item{
+  margin-top: 20rpx;
+}
+
+.type-img{
+  width: 100%;
+  height: 290rpx;
+  border-radius: 10rpx;
+  display: block;
+}
+
+.title{
+  display: flex;
+  flex-direction: row;
+  padding-top: 10px;
+}
+
+.title text{
+  left: 10rpx;
+  bottom: 20rpx;
+  color: black;
+  font-size: 28rpx;
+  font-weight: 500;
+  width: 74%;
+  padding-top: 5px;
+}
+
+.btn{
+  right: 10rpx;
+  width: 24%;
+  background:url('https://www.gfcamps.cn/images/wx_logo/tiyan.png') no-repeat center center;
+  background-size: cover;
+  height: 28px;
+  border-radius: 25rpx;
+  font-size: 14px;
+  text-align: center;
+  color: rgba(255,255,255,0);
+}
+
+
+.search{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  width: 95%;
+  padding-bottom: 1px;
+}
+.searchBg{
+  background-color:#f2f2f2;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 5px;
+  color: #999999;
+}
+.searchBg image{
+  margin-left: 5px;
+  margin-top:5px;
+}
+
+.search input{
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
+  font-weight:200;
+}
+
+.btn1{
+  font-size: 18px;
+  font-weight:300;
+  line-height: 40px;
+  margin-left: 5%;
+  border:1px solid #3385ff;
+  width:30%;
+  text-align: center;
+  background-color: #3385ff;
+  border-radius: 5px;
+  color: #fff
+}

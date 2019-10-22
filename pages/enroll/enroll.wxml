@@ -1,0 +1,9 @@
+<view class = "login">
+  <view class="login_logo">
+    <image src="https://www.hattonstar.com/login/login_logo.png" style=""></image>
+  </view>
+
+  <view class="button">
+      <button class="btn1" bindtap="register">开始报名</button>
+  </view>
+</view>
